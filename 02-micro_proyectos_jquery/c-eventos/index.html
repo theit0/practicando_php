@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Evento para manejar un elemento cuando se le pasa por encima
+    $("#p1").mouseenter(function(){
+        $(this).text("Im in the paragraph.")
+    })
+
+    // Evento para manejar un elemento cuando se le pasa por encima
+    $("#p2").mouseleave(function(){
+        $(this).text("Im in the paragraph.")
+    })
+
+    // Evento para manejar un elemento cuando se le hace hover 
+    $("#p3").hover(function(){
+        $(this).text("Youre in")
+    },
+    // Tambien se puede manejar cuando se sale del hover
+    function(){
+        $(this).text("3-Enter this paragraph.")
+    } 
+   );
+  });
+</script>
+</head>
+<body>
+
+  <p id="p1">1-Enter this paragraph.</p>
+  <p id="p2">2-Enter this paragraph.</p>
+  <p id="p3">3-Enter this paragraph.</p>
+
+</body>
+</html>
