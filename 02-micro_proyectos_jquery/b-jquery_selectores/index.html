@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Ocultar todo
+        /* $("button").click(function(){
+            $("*").hide();
+        }); */
+        
+        // Hacer referencia al elemento del scope local
+        /* $("button").click(function(){
+            $(this).hide();
+        }); */
+
+        // Seleccionar todos los elementos de cierta etiqueta con cierta clase
+        /* $("button").click(function(){
+            $("p.intro").hide();
+        }); */
+
+        // Ocultar el primer elemento que se encuentre con la etiqueta indicada
+        /* $("button").click(function(){
+            $("p:first").hide();
+        }); */
+
+        // Seleccionar todos los elementos con cierto atributo
+        /* $("button").click(function(){
+            $("[href]").hide();
+        });  */
+
+        // Seleccionar ciertos elementos con ciertos valores de ciertos atributos
+        /* $("button").click(function(){
+            $("a[target='_blank']").hide();
+        });  */
+        
+    });
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p class="intro">This is the third paragraph.</p>
+<a href="google.com">This is an anchor.</a>
+<a href="google.com" target="_blank">This is an anchor with target blank</a>
+
+<button>Click me</button>
+
+</body>
+</html>
