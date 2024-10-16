@@ -6,24 +6,19 @@
     <title>Proyecto PHP y jQuery</title>
     <!-- Incluir jQuery desde un CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
-    <h1>¡Hola, jQuery!</h1>
-    <p id="mensaje">Este texto cambiará con jQuery.</p>
-    <button class="btn">Clickear</button>
-    <script>
-        // Código jQuery
-        $(document).ready(function(){
+    <h1>Formulario con PHP y JQuery</h1>
 
-            // Modificar el contenido del parrafo "mensaje"
-            $('#mensaje').text('¡jQuery está funcionando!');
+    <form id="formulario" method="post" action="procesar_formulario.php" >
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="input-nombre">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="input-edad">
+        <button type="submit">Enviar</button>
+    </form>
 
-            // Al clickear el boton con clase "btn", cambia el contenido del parrafo "mensaje"
-            $('.btn').click(function(){
-                $('#mensaje').text('El texto ha sido cambiado mediante el click de un botón.')
-            })
-
-        });
-    </script>
+    <p id="resultado"></p>
 </body>
 </html>
